@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://skill-branch.ru/sitemap.xml
