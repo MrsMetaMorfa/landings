@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="185" height="185" viewBox="0 0 185 185">
+    <defs>
+        <circle id="po2fnv8kma" cx="640.5" cy="384.5" r="92.5"/>
+        <mask id="blef8vkigb" width="185" height="185" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#po2fnv8kma"/>
+        </mask>
+    </defs>
+    <use fill="none" fill-rule="evenodd" stroke="#FFF" stroke-dasharray="1.1 5.5" stroke-width="24.2" mask="url(#blef8vkigb)" transform="translate(-548 -292)" xlink:href="#po2fnv8kma"/>
+</svg>
