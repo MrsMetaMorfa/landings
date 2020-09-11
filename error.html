@@ -19,9 +19,9 @@
 				}
 			}
 			window.onload = () => {
-				let logoIcon = document.querySelector('.header__logo use')
-				let url = window.pageConfig.url.pathToAssets + 'img/svg-logo.svg'
-				logoIcon.setAttribute('xlink:href', url)
+				let logoIcon = document.querySelector('.header__logo .svg-icon')
+				let url = window.pageConfig.url.pathToAssets + 'svg_static/svg-logo.svg'
+				logoIcon.setAttribute('src', url)
 			}
 		</script>
 
@@ -135,9 +135,7 @@
 		<div class="error">
 			<header class="header">
 				<div v-else class="header__logo">
-					<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href=""></use>
-					</svg>
+					<img class="svg-icon" src="" alt="">
 				</div>
 			</header>
 			<main class="main">
