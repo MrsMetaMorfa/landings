@@ -496,7 +496,7 @@
 				"preview_small": "img/Small-Preview.jpg",
 				"preview_big": "img/Big-Preview.jpg",
 				"preview_mobile": "img/Mobile-Preview.jpg",
-				"url": "img/panorama_2.jpg"
+				"url": "img/panorama.jpg"
 			},
 			{
 				"id": 3,
@@ -511,7 +511,7 @@
 				"preview_small": "img/Small-Preview.jpg",
 				"preview_big": "img/Big-Preview.jpg",
 				"preview_mobile": "img/Mobile-Preview.jpg",
-				"url": "img/panorama_3.jpg"
+				"url": "img/panorama.jpg"
 			},
 			{
 				"id": 4,
@@ -526,7 +526,7 @@
 				"preview_small": "img/Small-Preview.jpg",
 				"preview_big": "img/Big-Preview.jpg",
 				"preview_mobile": "img/Mobile-Preview.jpg",
-				"url": "img/panorama_4.jpg"
+				"url": "img/panorama.jpg"
 			},
 			{
 				"id": 5,
@@ -541,7 +541,7 @@
 				"preview_small": "img/Small-Preview.jpg",
 				"preview_big": "img/Big-Preview.jpg",
 				"preview_mobile": "img/Mobile-Preview.jpg",
-				"url": "img/panorama_4.jpg"
+				"url": "img/panorama.jpg"
 			}
 		],
 		"sections": [
