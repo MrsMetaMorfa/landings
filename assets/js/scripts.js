@@ -46,7 +46,8 @@ window.onload = () => {
   const map = new Vivus(
     'map',
     {
-      type: 'sync',
+      type: 'scenario',
+      animTimingFunction: Vivus.EASE,
       onReady: () => {
         ResetAnimationMap()
       }
@@ -56,7 +57,7 @@ window.onload = () => {
   function ResetAnimationMap() {
     setTimeout(() => {
       map.stop().reset().play(1, ResetAnimationMap());
-    }, 6000)
+    }, 10000)
   }
 
   if (document.querySelector('.paginator')) {
