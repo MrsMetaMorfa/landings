@@ -63,16 +63,13 @@ window.onload = () => {
   if (document.querySelector('.paginator')) {
     let linkList = document.querySelectorAll('.paginator .paginator_link');
     let sectionList = document.querySelectorAll('.section');
-    window.onscroll = () => {
-      let topPosition = window.scrollY;
-      let windowHeight = window.innerHeight;
+    function SetProgress(topPosition, windowHeight) {
       sectionList.forEach((section, index) => {
-        console.log((section.getBoundingClientRect().y + topPosition), (topPosition + (windowHeight / 2)));
-        console.log((section.getBoundingClientRect().y + topPosition) < (topPosition + (windowHeight / 2)));
         if ((section.getBoundingClientRect().y + topPosition) < (topPosition + (windowHeight / 2))) {
           if ((section.getBoundingClientRect().y + section.getBoundingClientRect().height + topPosition) > (topPosition + (windowHeight / 2))) {
             linkList[index].classList.add('current', 'active');
           } else {
+            linkList[index].classList.add('active');
             linkList[index].classList.remove('current');
           }
         } else {
@@ -84,6 +81,12 @@ window.onload = () => {
           }
         }
       });
+    }
+
+    SetProgress(window.scrollY, window.innerHeight)
+
+    window.onscroll = () => {
+      SetProgress(window.scrollY, window.innerHeight)
     }
   }
 
