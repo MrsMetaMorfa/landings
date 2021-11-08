@@ -994,27 +994,28 @@ mark {
       min-width: 160px;
       width: calc((100% - 15px) / 2);
       min-height: 100px; } }
-  .warning_item:nth-child(3) .warning_icon {
+  .warning_item:nth-child(3) .warning_icon.animate {
     -webkit-animation-delay: 1s;
             animation-delay: 1s; }
-  .warning_item:nth-child(5) .warning_icon {
+  .warning_item:nth-child(5) .warning_icon.animate {
     -webkit-animation-delay: 2s;
             animation-delay: 2s; }
-  .warning_item:nth-child(7) .warning_icon {
+  .warning_item:nth-child(7) .warning_icon.animate {
     -webkit-animation-delay: 3s;
             animation-delay: 3s; }
 
 .warning_icon {
   margin: auto;
-  width: 160px;
-  -webkit-animation: 5.2s ease-in-out infinite warning;
-          animation: 5.2s ease-in-out infinite warning; }
+  width: 160px; }
   @media screen and (max-width: 1440px) {
     .warning_icon {
       width: 11.111vw; } }
   @media screen and (max-width: 767px) {
     .warning_icon {
       width: 115px; } }
+  .warning_icon.animate {
+    -webkit-animation: 5.2s ease-in-out infinite warning;
+            animation: 5.2s ease-in-out infinite warning; }
   .warning_icon img {
     width: 100%;
     height: auto; }
