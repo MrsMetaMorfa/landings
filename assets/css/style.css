@@ -637,18 +637,21 @@ mark {
       padding-bottom: 11px; } }
   .header_logo, .header_phone {
     display: block; }
-  .header_phone {
+  .header_phone, .header_instagram {
     color: #1A394A;
     font-weight: 700;
     text-decoration: none;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-left: 16px; }
     @media screen and (max-width: 1440px) {
-      .header_phone {
+      .header_phone, .header_instagram {
         font-size: 1.111vw; } }
     @media screen and (max-width: 767px) {
-      .header_phone {
+      .header_phone, .header_instagram {
         margin-left: auto;
         font-size: 16px; } }
+    .header_phone:hover, .header_phone:focus, .header_instagram:hover, .header_instagram:focus {
+      color: #0FB3E9; }
   .header_nav-list {
     margin: 0;
     padding: 0;
@@ -724,11 +727,19 @@ mark {
           background: #ffffff; }
           .header_mobile .header_nav-list.show {
             display: block; } }
+  .header_contacts {
+    display: inline-flex;
+    align-items: center; }
+  .header_instagram {
+    text-transform: uppercase;
+    letter-spacing: -0.02rem; }
 
 .section {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   padding-top: 50px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-height: 100vh;
+  align-items: flex-start; }
   .section--first {
     width: calc(100% + 27px);
     margin-left: -27px; }
@@ -828,6 +839,7 @@ mark {
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row: 1;
   gap: 30px;
   list-style-type: none;
   padding: 0;
@@ -1087,6 +1099,8 @@ mark {
     text-decoration: none;
     color: #1A394A;
     font-weight: 700; }
+    .form_phone:hover, .form_phone:focus {
+      color: #0FB3E9; }
   .form_line {
     justify-content: center; }
     @media screen and (max-width: 767px) {
@@ -1300,3 +1314,43 @@ mark {
   overflow: visible;
   -webkit-animation: 3s ease-in-out infinite fly;
           animation: 3s ease-in-out infinite fly; }
+
+.footer_map {
+  background: rgba(204, 239, 250, 0.5); }
+
+.footer_phone {
+  display: block;
+  color: #1A394A;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px; }
+  @media screen and (max-width: 1440px) {
+    .footer_phone {
+      font-size: 1.111vw; } }
+  @media screen and (max-width: 767px) {
+    .footer_phone {
+      margin-left: auto;
+      font-size: 16px; } }
+  .footer_phone:hover, .footer_phone:focus {
+    color: #0FB3E9; }
+
+.footer_info {
+  align-items: flex-start;
+  gap: 8%;
+  flex-wrap: wrap;
+  margin-bottom: 30px; }
+
+.footer_text p {
+  margin: 0 0 12px; }
+  .footer_text p strong {
+    font-weight: 900; }
+  .footer_text p mark {
+    font-weight: 700;
+    font-size: 16px;
+    width: 64px;
+    min-width: 64px;
+    display: inline-block;
+    margin-right: 8px; }
+    @media screen and (max-width: 767px) {
+      .footer_text p mark {
+        font-size: 16px; } }
