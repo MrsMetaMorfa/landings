@@ -635,14 +635,16 @@ mark {
     .header {
       padding-top: 13px;
       padding-bottom: 11px; } }
-  .header_logo, .header_phone {
+  .header_logo, .header_phone, .header_instagram {
     display: block; }
   .header_phone, .header_instagram {
     color: #1A394A;
     font-weight: 700;
     text-decoration: none;
     font-size: 16px;
-    margin-left: 16px; }
+    margin-left: 16px;
+    display: flex;
+    align-items: center; }
     @media screen and (max-width: 1440px) {
       .header_phone, .header_instagram {
         font-size: 1.111vw; } }
@@ -652,6 +654,12 @@ mark {
         font-size: 16px; } }
     .header_phone:hover, .header_phone:focus, .header_instagram:hover, .header_instagram:focus {
       color: #0FB3E9; }
+    .header_phone img, .header_instagram img {
+      display: inline-block;
+      height: 20px;
+      width: auto;
+      margin: 0 4px 0 0;
+      transform: scale(1.4); }
   .header_nav-list {
     margin: 0;
     padding: 0;
@@ -737,9 +745,7 @@ mark {
 .section {
   padding-bottom: 100px;
   padding-top: 50px;
-  justify-content: space-between;
-  min-height: 100vh;
-  align-items: flex-start; }
+  justify-content: space-between; }
   .section--first {
     width: calc(100% + 27px);
     margin-left: -27px; }
